@@ -1,8 +1,12 @@
+---
+title: Git
+---
+
 # Git
 
 Git is a form a version control software that provides a user with the ability to track changes of files, annotate changes and create branches. Git enables multiple people to work on the same project and whilst it is distributed (e.g. a copy of project is held by every user), a remote copy is used to keep everybody's version synchronised.
 
-{:toc}
+{% include toc.html html=content %}
 
 ## Prerequisites
 
@@ -126,7 +130,7 @@ If in doubt, check for the presence of a `CONTRIBUTORS` file within a repository
 
 #### Commit messages
 
-Descriptive commit messages can also provide enough information to find a relevant commit in software such as [GitLab](https://cmseutc01.ddns.shef.ac.uk:4443/gitlab/) or when browsing through the git logs. Messages can span multiple lines if required. A good commit message describes the contents of the change and this may be bullet points (e.g. `- This is a bullet point in plain text`) or in paragraphs of plain text.
+Descriptive commit messages can also provide enough information to find a relevant commit in software such as GitLab or GitHub, or when browsing through the git logs. Messages can span multiple lines if required. A good commit message describes the contents of the change and this may be bullet points (e.g. `- This is a bullet point in plain text`) or in paragraphs of plain text.
 
 #### When to commit
 
@@ -144,11 +148,11 @@ Whilst git will track changes of a repository for a single user, one of git's st
 
 A repository can have one or more remote repository locations. Each remote can be tracked separately, although it's up to the user to manage each repository individually. By using a remote server, two functions become available: `push` and `pull`. Push will upload local changes to the remote repository, and pull will download remotely held changes to the local repository. These actions will also look for conflicts and merge changes wherever possible.
 
-A connection to a remote repository is handled through one of two protocols: `https` or `ssh`. As the UTC uses a [custom-signed digital certificate](../security/#utc-digital-certificates), it is simpler to use the `ssh` protocol. Should the UTC's CA certificate be installed, then either protocol can be used.
+A connection to a remote repository can be handled through one of two protocols: `https` or `ssh`. Some repositories may be limited to one of these protocols, but this shouldn't have any impact on the operation of git.
 
-#### GitLab
+#### GitHub and GitLab
 
-The UTC uses [GitLab](https://cmseutc01.ddns.shef.ac.uk:4447/) to manage projects and shared repositories. Check out the [UTC's GitLab documentation](./gitlab/) for more information on the GitLab service and learn how to use it, including tasks such as [*adding a repository*](./gitlab/#creating-a-new-gitlab-repository), [*cloning an existing repository*](./gitlab/#cloning-a-gitlab-repository), and [*pushing an existing repository to GitLab*](./gitlab/#pushing-an-existing-repository-to-gitlab).
+The Signal Processing Research group uses [GitHub](https://github.com/sig-proc/) to manage projects and shared repositories.
 
 ### Using branches
 
